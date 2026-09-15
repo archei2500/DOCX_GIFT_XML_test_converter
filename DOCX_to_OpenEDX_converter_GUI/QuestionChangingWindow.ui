@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1195</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Настройка вопроса</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="Input_and_console">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTextBrowser" name="question_text"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="confirm">
+        <property name="text">
+         <string>Продолжить</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="Options">
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="title">
+       <string>Настройки</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>682</width>
+            <height>361</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QFormLayout" name="formLayout_2">
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_display_name_q">
+               <property name="text">
+                <string>Выводимое имя</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_display_name_q">
+               <property name="text">
+                <string>Вопрос</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_show_correctness_q">
+               <property name="text">
+                <string>Показывать корректность</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QComboBox" name="comboBox_show_correctness_q">
+               <item>
+                <property name="text">
+                 <string>Всегда</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Никогда</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_showanswer_q">
+               <property name="text">
+                <string>Показывать ответ</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QComboBox" name="comboBox_showanswer_q">
+               <item>
+                <property name="text">
+                 <string>Никогда</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Всегда</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Дан ответ</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Использована попытка</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Закрыт</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Выполнен</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Ответ верен или прошёл срок сдачи</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Прошёл срок сдачи</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_rerandomize_q">
+               <property name="text">
+                <string>Выбор случайных значений</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QComboBox" name="comboBox_rerandomize_q">
+               <item>
+                <property name="text">
+                 <string>Для каждого студента</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Всегда</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>При сбросе</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Никогда</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_max_attempts_q">
+               <property name="text">
+                <string>Максимальное количество попыток</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QSpinBox" name="spinBox_max_attempts_q">
+               <property name="value">
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_weight">
+               <property name="text">
+                <string>Вес</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_weight_q">
+               <property name="decimals">
+                <number>1</number>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label_show_reset_button_q">
+               <property name="text">
+                <string>Показывать кнопку &quot;Cбросить&quot;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QCheckBox" name="checkBox_show_reset_button_q">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="label_submission_wait_seconds_q">
+               <property name="text">
+                <string>Время между попытками</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <widget class="QSpinBox" name="spinBox_submission_wait_seconds_q"/>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Погрешность</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="text">
+                <string>1%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0">
+              <widget class="QLabel" name="label_reg_type">
+               <property name="text">
+                <string>Тип поля для ввода</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="1">
+              <widget class="QComboBox" name="comboBox_reg_type">
+               <item>
+                <property name="text">
+                 <string>Чувств. к регистру</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Нечувств. к регистру</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Для рег. выражений, чувств. к регистру</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Для рег. выражений, нечувств. к регистру</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="label_trailing_text">
+               <property name="text">
+                <string>Текст после поля ввода</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="1">
+              <widget class="QLineEdit" name="lineEdit_trailing_text"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
